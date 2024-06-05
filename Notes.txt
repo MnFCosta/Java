@@ -15,3 +15,10 @@ Ex: Array = A collection of elements stores in contiguous memory locations.
 
 Algorithm = A collection of steps to solve a problem
 Ex: Linear Search = Examining the elements of an array one by one to find a value.
+
+DATA STRUCTURES
+
+Stack = LIFO data structure (Last in first out).
+Stores objects as a "vertical tower", like a stack of books or cds.
+push() method is used to add objects to the top.
+pop() method is used to remove from the top.
