@@ -18,7 +18,17 @@ Ex: Linear Search = Examining the elements of an array one by one to find a valu
 
 DATA STRUCTURES
 
-Stack = LIFO data structure (Last in first out).
+STACK
+LIFO data structure (Last in first out).
 Stores objects as a "vertical tower", like a stack of books or cds.
 push() method is used to add objects to the top.
 pop() method is used to remove from the top.
+
+QUEUE
+FIFO data structure (First in first out)
+A collection designed for holding elements prior to processing.
+Linear data structure (a data structure that stores data sequentially)
+Head = First element of the queue
+Tail = Lst element of the queue
+enqueue = adding an object to the end of the queue
+dequeue = removing an object fron the head of the queue
