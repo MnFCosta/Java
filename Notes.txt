@@ -1,0 +1,17 @@
+Main Method = The entry point of a Java program
+
+public static void main(String[] args) {
+        *CODE*
+}
+
+public = Needs to be public so that the JRE (Java Runtime Environment) can access and execute it.
+static = Needs to be static so that the JVM can load the class into memory and call the main method without creating an instance of the class first.
+void = Return type is void because the main function shouldn't return anything, when it finishes executing, the Java program simply terminates.
+String[] args = accepts arguments from the command line that are stored in a String array to affect the operation of the program.
+
+
+Data Structures = Named location used to store and organize data
+Ex: Array = A collection of elements stores in contiguous memory locations.
+
+Algorithm = A collection of steps to solve a problem
+Ex: Linear Search = Examining the elements of an array one by one to find a value.
