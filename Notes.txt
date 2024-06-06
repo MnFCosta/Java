@@ -31,4 +31,10 @@ Linear data structure (a data structure that stores data sequentially)
 Head = First element of the queue
 Tail = Lst element of the queue
 enqueue = adding an object to the end of the queue
-dequeue = removing an object fron the head of the queue
+dequeue = removing an object from the head of the queue
+
+Priority Queue
+A FIFO data structure that serves elements with the highest priority first before elements with lower priority
+Its like a normal queue, but you sort the elements first based on a parameter, so you can serve the elements
+with the highest priority first and work your way down to the lowest priority.
+
