@@ -1,9 +1,7 @@
 package mfc.datastructures;
-import java.sql.SQLOutput;
 import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.LinkedList;
 
 public class PriorityQueues {
     public static void main(String[] args){

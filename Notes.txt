@@ -29,7 +29,7 @@ FIFO data structure (First in first out)
 A collection designed for holding elements prior to processing.
 Linear data structure (a data structure that stores data sequentially)
 Head = First element of the queue
-Tail = Lst element of the queue
+Tail = Last element of the queue
 enqueue = adding an object to the end of the queue
 dequeue = removing an object from the head of the queue
 
@@ -37,4 +37,33 @@ Priority Queue
 A FIFO data structure that serves elements with the highest priority first before elements with lower priority
 Its like a normal queue, but you sort the elements first based on a parameter, so you can serve the elements
 with the highest priority first and work your way down to the lowest priority.
+
+LinkedLists
+Stores nodes in 2 parts (data + address)
+Nodes are in non-consecutive memory locations, elements are linked using pointers
+
+Singly LinkedList structure (Address points only to the next node)
+     Node                 Node                Node
+[data | address] ->  [data | address] -> [data | address]
+
+Doubly LinkedList structure (Address points to the previous and next node)
+           Node                            Node
+[address | data | address] <->  [address | data | address]
+
+Advantages:
+1 - Dynamic Data Structure (allocates needed memory while running)
+2 - Insertion and Deletion of Nodes is easy, 0(1) constant time complexity
+3 - No/Low Memory Waste
+
+Disadvantages:
+1 - Greater memory usage(additional pointer for the address, even more so with a doubly linked list)
+2 - No random access of elements (no index[i])
+3 - Accessing/searching elements is more time-consuming 0(n) linear time complexity
+
+Use examples:
+1 - Implement Stacks and Queues
+2 - GPS navigation
+(If you have a starting position and a final destination, every stop along the way can be seen as a node,
+ and changing the path is as simple as changing, inserting or deleting a node)
+3 - Music Playlists
 
