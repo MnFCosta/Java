@@ -103,3 +103,16 @@ O(n) = Linear time, increases time proportionally to the amount of data
 0(n log n) = Quasilinear time, it's similar to linear time for the most part, but gets less and less efficient the larger the dataset.
 O(n^2) = Quadratic time, becomes much less efficient the larger the amount of data.
 0(n!) = Factorial time, gets extremely less efficient the larger the amount of data.
+
+SEARCH ALGORITHMS
+
+Linear search = iterate through a collection one element at a time
+Runtime complexity = O(n)
+
+Advantages:
+Fast for searches in small to medium data sets
+Doesn't need to be sorted
+Useful for data structures that don't have random access, like LinkedLists
+
+Disadvantages:
+Slow for large data sets
