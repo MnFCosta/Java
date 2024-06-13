@@ -10,13 +10,12 @@ void = Return type is void because the main function shouldn't return anything, 
 String[] args = accepts arguments from the command line that are stored in a String array to affect the operation of the program.
 
 
-Data Structures = Named location used to store and organize data
-Ex: Array = A collection of elements stores in contiguous memory locations.
-
 Algorithm = A collection of steps to solve a problem
 Ex: Linear Search = Examining the elements of an array one by one to find a value.
 
-DATA STRUCTURES
+----------------------DATA STRUCTURES-------------------------------------------------------------------------------------------------------
+Data Structures = Named location used to store and organize data
+Ex: Array = A collection of elements stores in contiguous memory locations.
 
 STACK
 LIFO data structure (Last in first out).
@@ -104,10 +103,12 @@ O(n) = Linear time, increases time proportionally to the amount of data
 O(n^2) = Quadratic time, becomes much less efficient the larger the amount of data.
 0(n!) = Factorial time, gets extremely less efficient the larger the amount of data.
 
-SEARCH ALGORITHMS
+----------------------SEARCH ALGORITHMS-------------------------------------------------------------------------------------------------------
+
+LINEAR SEARCH
 
 Linear search = iterate through a collection one element at a time
-Runtime complexity = O(n)
+Time complexity = O(n)
 
 Advantages:
 Fast for searches in small to medium data sets
@@ -116,3 +117,16 @@ Useful for data structures that don't have random access, like LinkedLists
 
 Disadvantages:
 Slow for large data sets
+
+BINARY SEARCH
+
+Binary search = finds the position of a target value within a sorted array, half of the array is eliminated during each "step".
+Time complexity = 0(log n)
+
+Advantages:
+Gets more efficient the higher the amount of data
+
+Disadvantages:
+Dataset has to be sorted beforehand
+Can be slower than linear search in small datasets
+
