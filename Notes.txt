@@ -130,3 +130,15 @@ Disadvantages:
 Dataset has to be sorted beforehand
 Can be slower than linear search in small datasets
 
+INTERPOLATION SEARCH
+
+Interpolation search = Improvement over binary searches used for uniformly distributed data
+It "guesses" where a value might be based on calculated probe results, if the probe is incorrect,
+search area is narrowed and a new probe is calculated.
+
+It basically guesses where the value is and returns the index
+
+Time complexity:
+Average case: O(log(log(n))
+Worst case: O(n) values increase exponentially
+
