@@ -103,6 +103,18 @@ O(n) = Linear time, increases time proportionally to the amount of data
 O(n^2) = Quadratic time, becomes much less efficient the larger the amount of data.
 0(n!) = Factorial time, gets extremely less efficient the larger the amount of data.
 
+----------------------SORTING ALGORITHMS-------------------------------------------------------------------------------------------------------
+
+BUBBLE SORT
+Pairs of adjacent elements are compared, and the elements are swapped if they aren't in order
+Its slow as hell, but very simple, so it's mostly used for educational purposes as an introduction to sorting algorithms.
+In small data sets its passable but starts becoming extremely inefficient the larger the data set becomes.
+Time Complexity = 0(n^2)
+
+
+
+
+
 ----------------------SEARCH ALGORITHMS-------------------------------------------------------------------------------------------------------
 
 LINEAR SEARCH
@@ -141,4 +153,6 @@ It basically guesses where the value is and returns the index
 Time complexity:
 Average case: O(log(log(n))
 Worst case: O(n) values increase exponentially
+
+
 
