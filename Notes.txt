@@ -117,6 +117,15 @@ It's a bit more efficient than bubble sort, since it does fewer swaps per iterat
 Still, it becomes increasingly less efficient as the data set grows, used mostly for educational purposes.
 Time complexity = 0(n^2)
 
+INSERTION SORT
+Starting from index 1, put the element on a temporary variable (temp)
+compare the elements to the left and shift elements to the right if they are larger than what is in temp
+Then put the temp element on the opening left after shifting the elements to the right.
+Time complexity = O(n^2), though it can also run at 0(n) in the best case scenario where all the elements are already sorted.
+Fewer steps than bubble sort, and runs in O(n) if the elements are already sorted.
+
+
+
 
 
 
