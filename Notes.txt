@@ -111,6 +111,15 @@ Its slow as hell, but very simple, so it's mostly used for educational purposes 
 In small data sets its passable but starts becoming extremely inefficient the larger the data set becomes.
 Time Complexity = 0(n^2)
 
+SELECTION SORT
+Search through an array and keep track of the minimum value during each iteration, at the end of each iteration, we swap variables.
+It's a bit more efficient than bubble sort, since it does fewer swaps per iteration.
+Still, it becomes increasingly less efficient as the data set grows, used mostly for educational purposes.
+Time complexity = 0(n^2)
+
+
+
+
 
 
 
@@ -153,6 +162,8 @@ It basically guesses where the value is and returns the index
 Time complexity:
 Average case: O(log(log(n))
 Worst case: O(n) values increase exponentially
+
+
 
 
 
