@@ -148,8 +148,12 @@ Then put the temp element on the opening left after shifting the elements to the
 Time complexity = O(n^2), though it can also run at 0(n) in the best case scenario where all the elements are already sorted.
 Fewer steps than bubble sort, and runs in O(n) if the elements are already sorted.
 
-
-
+MERGE SORT
+A "divide and conquer" type of algorithm
+Recursively divides an array by 2 (left and right arrays), until the size of the arrays is 1,
+then compare the left and right arrays putting them in order on the array they came from (sorting, then merging)
+Time Complexity = O(n log n)
+Space Complexity - 0(n)
 
 
 
