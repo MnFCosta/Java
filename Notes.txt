@@ -153,12 +153,14 @@ A "divide and conquer" type of algorithm
 Recursively divides an array by 2 (left and right arrays), until the size of the arrays is 1,
 then compare the left and right arrays putting them in order on the array they came from (sorting, then merging)
 Time Complexity = O(n log n)
-Space Complexity - 0(n)
+Space Complexity = 0(n)
 
-
-
-
-
+QUICK SORT
+Sets a pivot, then moves the smaller elements to the left of the pivot.
+Recursively divides an array in 2 partitions (one with the elements smaller than the pivot, and another with the elements bigger than the pivot).
+Differently from merge sort, quick sort uses the initial pivot to determine the beginning and end of the partitions.
+Time complexity = O(n log n) best and average cases, worst case, where the array is sorted or closed to be sorted, it runs in 0(n^2)
+Space complexity = 0(log(n))
 
 
 ----------------------SEARCH ALGORITHMS-------------------------------------------------------------------------------------------------------
