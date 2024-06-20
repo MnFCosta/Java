@@ -17,6 +17,22 @@ Ex: Linear Search = Examining the elements of an array one by one to find a valu
 Data Structures = Named location used to store and organize data
 Ex: Array = A collection of elements stores in contiguous memory locations.
 
+Big O notation:
+"How code slows as data grows"
+1 - Describes the performance of an algorithm as the amount of data increases
+2 - Machine independent, it focuses on the number of steps to complete an algorithm, independent of hardware.
+3 - Ignores smaller operations Ex: O(n + 1) -> 0(n), the +1 wouldn't make much of a difference.
+
+Examples of notations:
+n = A variable for the amount of data.
+
+O(1) = Constant time, takes the same amount of time regardless of data.
+O(log n) = Logarithmic time, becomes more efficient the larger the amount of data.
+O(n) = Linear time, increases time proportionally to the amount of data
+0(n log n) = Quasilinear time, it's similar to linear time for the most part, but gets less and less efficient the larger the dataset.
+O(n^2) = Quadratic time, becomes much less efficient the larger the amount of data.
+0(n!) = Factorial time, gets extremely less efficient the larger the amount of data.
+
 Recursion = Applying the result of a procedure, to a procedure.
 A recursive function calls itself, it can substitute iteration.
 Commonly used in advanced sorting algorithms and navigating trees.
@@ -111,21 +127,23 @@ leading to null memory addresses
 in case of an insertion.
 3 - Expanding/Shrinking the array has 0 (n) linear time complexity due to needing to copy all the elements over to a new array with a new capacity
 
-Big O notation:
-"How code slows as data grows"
-1 - Describes the performance of an algorithm as the amount of data increases
-2 - Machine independent, it focuses on the number of steps to complete an algorithm, independent of hardware.
-3 - Ignores smaller operations Ex: O(n + 1) -> 0(n), the +1 wouldn't make much of a difference.
+HASH TABLES
+A data structure that stores unique keys to values
+Each key/value pair is known as an Entry
+Fast insertion, look up and deletion of key/value pairs
+Not ideal for small data sets due to overhead, but great with large data sets.
 
-Examples of notations:
-n = A variable for the amount of data.
+Hashing = takes a key and computes an integer (formula will vary based on key and data type)
+In a HashTable, we use the hash % (module) capacity to calculate an index number
+key.hashCode() % capacity = index
 
-O(1) = Constant time, takes the same amount of time regardless of data.
-O(log n) = Logarithmic time, becomes more efficient the larger the amount of data.
-O(n) = Linear time, increases time proportionally to the amount of data
-0(n log n) = Quasilinear time, it's similar to linear time for the most part, but gets less and less efficient the larger the dataset.
-O(n^2) = Quadratic time, becomes much less efficient the larger the amount of data.
-0(n!) = Factorial time, gets extremely less efficient the larger the amount of data.
+Bucket = An indexed storage location for one or more Entries
+can store multiple Entries in case of a collision(in that case, each bucket is treated like a LinkedList)
+
+Collision = hash function results in the same index for more than one key, fewer collisions results in higher efficiency.
+
+Runtime complexity = Best case 0(1) when no collisions, Worst case, where there's only collision, 0(n)
+
 
 ----------------------SORTING ALGORITHMS-------------------------------------------------------------------------------------------------------
 
