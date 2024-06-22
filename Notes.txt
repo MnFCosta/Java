@@ -144,6 +144,49 @@ Collision = hash function results in the same index for more than one key, fewer
 
 Runtime complexity = Best case 0(1) when no collisions, Worst case, where there's only collision, 0(n)
 
+GRAPHS
+Nonlinear aggregation of nodes and edges
+Node(also known as a Vertex) = May contain some piece of data
+Edge = A connection between two nodes
+
+Undirected graphs:
+A social network can be used as an example, each node can represent a user,
+and if one user is friends with another user we can establish a connection an edge a connection between the two nodes.
+If two nodes are connected they have ADJACENCY.
+
+Directed graphs:
+A directed graph contains one way edges that will connect one node to another.
+A node can point to another node. that is a single edge.
+A node can point to another node, and have the node it points to, also point to it, that is a double edge.
+An example would be a street map, where each node is a possible destination, single edges could represent one way streets,
+and double edges could represent two-way streets.
+
+There are two ways to represent graphs, an Adjacency Matrix, and an Adjacency List.
+
+Adjacency Matrix:
+A 2D array with one row and one column for each node, if we need to check if there's adjacency, we would first find the
+index of the node we are starting at, and then find the index of the node we are traveling to. (Ex: Row A (Starting node) Column B(Destination)).
+If there is no adjacency(no edges) [A][B] would be 0, if there is adjacency, it would be 1.
+
+Advantages:
+The runtime complexity is constant 0(1), we simply have to find two indexes, the row and the column
+
+Disadvantages:
+O(n^2) quadratic space complexity, since each new node implies another row-column, 5 nodes results in 25 spaces in the matrix.
+
+Adjacency matrices tent to suit graphs with a high amount of edges.
+
+Adjacency List:
+An adjacency list is an array of linked lists, each element being a separate linked list.
+Each header within a linked list contains a node, if there is adjacency, we add the adjacent node to the linked list.
+
+Advantages:
+Uses less space than a matrix, 0(V+E) V being the number of vertices(nodes), and E for the number of edges
+
+Disadvantages:
+0(n) linear time complexity to find adjacency, since we must traverse linearly each linked list to check for adjacency.
+
+Graphs are a popular way to model networks, which don't necessarily have any sort of order;
 
 ----------------------SORTING ALGORITHMS-------------------------------------------------------------------------------------------------------
 
