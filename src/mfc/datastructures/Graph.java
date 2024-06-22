@@ -43,4 +43,27 @@ public class Graph {
             System.out.print('\n');
         }
     }
+
+    public void depthFirstSearch(int src){
+            boolean[] visited = new boolean[matrix.length];
+            dFSHelper(src, visited);
+
+    }
+
+    private void dFSHelper(int src, boolean[] visited){
+            if(visited[src]){
+                return;
+            }else{
+                visited[src] = true;
+                System.out.println("Node " + nodes.get(src).data + " visited");
+            }
+
+            for(int i = 0; i < matrix[src].length; i++){
+                if(matrix[src][i] == 1){
+                    dFSHelper(i, visited);
+                }
+            }
+            return;
+
+    }
 }
