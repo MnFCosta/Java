@@ -267,8 +267,19 @@ DEPTH FIRST SEARCH:
 A search algorithm for traversing a tree or graph data structure.
 Pick a route, and keep going until you reach a dead end or an already visited node,
 then backtrack to a previous node with unvisited adjacent neighbors
+Traverse a graph branch ny branch
+Utilizes a stack
+Better if destination is on average far from the start
+Children are visited before children
 
 
+BREADTH FIRST SEARCH:
+Also a search algorithm to traverse trees/graphs.
+This is done one "Level" at a time instead of one "Branch" at a time, like in DFS.
+Traverses a graph level by level.
+Utilizes a Queue
+Better if destination is on average close to start
+Siblings are visited before children
 
 
 
