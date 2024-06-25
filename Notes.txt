@@ -188,6 +188,20 @@ Disadvantages:
 
 Graphs are a popular way to model networks, which don't necessarily have any sort of order;
 
+TREES
+Tree = Non-linear data-structure where nodes are organized in a hierarchy
+Root Node = The top of the tree, it has no incoming edges, only outgoing edges.
+Leaf Node = The nodes at the bottom of the tree, have no outgoing edges, only incoming ones.
+Branch Node = Branch nodes are in the middle, they have incoming and outgoing edges.
+Parent = Any node with outgoing edges.
+Child = Any node with incoming edges.
+(Nodes can be both Parents and Children at the same time)
+Siblings = Any two children that share the same parent.
+Subtree = A smaller tree held within a larger tree.
+Size =  Size of the tree is equal to the number of nodes.
+Depth = Number of edges below the root node.
+Height = The number of edges above the furthest leaf node.
+
 ----------------------SORTING ALGORITHMS-------------------------------------------------------------------------------------------------------
 
 BUBBLE SORT
@@ -271,7 +285,6 @@ Traverse a graph branch ny branch
 Utilizes a stack
 Better if destination is on average far from the start
 Children are visited before children
-
 
 BREADTH FIRST SEARCH:
 Also a search algorithm to traverse trees/graphs.
