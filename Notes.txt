@@ -202,6 +202,32 @@ Size =  Size of the tree is equal to the number of nodes.
 Depth = Number of edges below the root node.
 Height = The number of edges above the furthest leaf node.
 
+BINARY TREE
+A tree where each of its nodes has no more than two children.
+
+BINARY SEARCH TREE
+The values are arranged in a certain order.
+The root note must be greater than the left child, but less than the right child.
+Binary trees are used for quick lookup, by comparing the value we are searching to the value of a node,
+we can use the order of the tree to know where we need to go to find that value.
+
+Benefit = Easy to locate a node when they are in this order.
+
+Time complexity to find a value in a binary tree is 0(log n) in its best case, wort case 0(n),
+depends on how balanced the tree is.
+
+Space complexity 0(n)
+
+Tree Traversal
+In order traversal, gives nodes in non-decreasing order, you can reverse it to return nodes in non-increasing order.
+left>root>right
+
+Pre Order traversal, used to create a copy of a tree
+root>left>right
+
+Post Order traversal, used to delete a tree from leaf to root
+left>right>root
+
 ----------------------SORTING ALGORITHMS-------------------------------------------------------------------------------------------------------
 
 BUBBLE SORT
