@@ -1,0 +1,33 @@
+package EX1.entities;
+
+import java.util.Scanner;
+
+public class Conta {
+    private int numeroConta;
+    private String nomeTitular;
+    private double saldo = 0;
+
+    public Conta (String nomeTitular, int numeroConta){
+        this.nomeTitular = nomeTitular;
+        this.numeroConta = numeroConta;
+    }
+
+    public void deposito(double valor){
+        this.saldo += valor;
+        System.out.printf("Holder: %s%n Account ID: %d%n Current balance: R$%.2f%n ", nomeTitular, numeroConta, saldo);
+    }
+
+    public void saque(double valor){
+        this.saldo -= valor + 5.00;
+        System.out.printf("Holder: %s%n Account ID: %d%n Current balance: R$%.2f%n ", nomeTitular, numeroConta, saldo);
+    }
+
+    public void atualizarNomeTitular(Scanner sc){
+        System.out.print("Insert new holder name: ");
+        this.nomeTitular = sc.nextLine();
+        System.out.printf("Holder: %s%n Account ID: %d%n Current balance: R$%.2f%n ", nomeTitular, numeroConta, saldo);
+
+    }
+
+
+}

@@ -29,6 +29,9 @@ public class Main {
         System.out.println("Enter the number of products to be removed in stock");
         product.removeProducts(sc.nextInt());
 
+        product.setName("Batata");
+        System.out.println(product.getPrice());
+
         System.out.printf(product.toString());
 
         sc.close();
