@@ -10,21 +10,25 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         int control = 0;
+        Conta account;
 
         System.out.println("No account detected, please make an account");
         System.out.print("Insert holder name:");
         String holder = sc.nextLine();
         System.out.println("Insert account ID:");
         int id = sc.nextInt();
-        Conta account = new Conta(holder, id);
 
         System.out.println("Would you like to make an initial deposit? (1 - Yes / 0 - No)");
 
         int option = sc.nextInt();
+
         if (option == 1) {
             System.out.println("Insert deposit amount");
-            account.deposito(sc.nextDouble());
+            account = new Conta(holder, id, sc.nextDouble());
+        } else {
+            account = new Conta(holder, id);
         }
+
 
         while (control == 0) {
             System.out.println("WELCOME TO THE BANK SELECT ONE OF THE OPTIONS UNDER");

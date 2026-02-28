@@ -12,6 +12,12 @@ public class Conta {
         this.numeroConta = numeroConta;
     }
 
+    public Conta (String nomeTitular, int numeroConta, double depositoInicial){
+        this.nomeTitular = nomeTitular;
+        this.numeroConta = numeroConta;
+        deposito(depositoInicial);
+    }
+
     public void deposito(double valor){
         this.saldo += valor;
         System.out.printf("Holder: %s%n Account ID: %d%n Current balance: R$%.2f%n ", nomeTitular, numeroConta, saldo);
