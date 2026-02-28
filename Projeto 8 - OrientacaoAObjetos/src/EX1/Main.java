@@ -53,7 +53,7 @@ public class Main {
                     control = 1;
                     break;
                 default:
-                    System.out.println("Valor inválido selecione uma número válido (1 a 4)");
+                    System.out.println("Unexpected value selected, select a valid number (1 to 4)");
             }
         }
 
