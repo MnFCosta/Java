@@ -15,7 +15,7 @@ public class Main {
         Produto[] arrProd = new Produto[n];
         double sum = 0;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrProd.length; i++) {
             System.out.printf("Nome do produto %d:%n", i + 1);
             sc.nextLine();
             String nome = sc.nextLine();
@@ -24,11 +24,11 @@ public class Main {
             arrProd[i] = new Produto(nome,preco);
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arrProd.length; i++) {
             sum += arrProd[i].getPreco();
         }
 
-        System.out.printf("Preço médio: %.2f", sum/n);
+        System.out.printf("Preço médio = %.2f", sum/n);
 
         sc.close();
     }
