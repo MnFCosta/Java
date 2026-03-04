@@ -1,4 +1,4 @@
-package vetores;
+package vetoresTV;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -22,8 +22,6 @@ public class Main {
         }
 
         System.out.printf("Average height: %.2f", sum/num);
-
-
-
+        sc.close();
     }
 }
