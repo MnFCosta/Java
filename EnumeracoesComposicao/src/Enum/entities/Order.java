@@ -1,6 +1,6 @@
-package entities;
+package Enum.entities;
 
-import entities.enums.OrderStatus;
+import Enum.entities.enums.OrderStatus;
 
 import java.util.Date;
 
