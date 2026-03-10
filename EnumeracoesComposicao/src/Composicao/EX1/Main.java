@@ -56,5 +56,6 @@ public class Main {
         System.out.printf("Department: %s%n", worker.getDepartment());
         System.out.printf("Income data for %s: %.2f", tp, worker.income(Integer.parseInt(tp.split("/")[0]), Integer.parseInt(tp.split("/")[1])));
 
+        sc.close();
     }
 }
