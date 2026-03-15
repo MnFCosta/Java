@@ -3,6 +3,22 @@ import java.util.Scanner;
 
 public class Main {
     static void main() {
+        method1();
+        System.out.println("End");
+
+
+    }
+
+    public static void method1(){
+        System.out.println("***Method 1 Start***");
+
+        method2();
+
+        System.out.println("***Method 1 End***");
+    }
+
+    public static void method2(){
+        System.out.println("***Method 2 Start***");
         Scanner sc = new Scanner(System.in);
 
         try {
@@ -15,8 +31,7 @@ public class Main {
             System.out.println("Input Error!");
         }
 
-        System.out.println("End");
-
         sc.close();
+        System.out.println("***Method 2 End***");
     }
 }
