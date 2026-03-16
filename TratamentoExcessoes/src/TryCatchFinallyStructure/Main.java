@@ -1,3 +1,5 @@
+package TryCatchFinallyStructure;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -31,7 +33,7 @@ public class Main {
             System.out.println("Input Error!");
         }
 
-        sc.close();
         System.out.println("***Method 2 End***");
+        sc.close();
     }
 }
