@@ -1,4 +1,4 @@
-package ExcecoesPersonalizadas.model.entities;
+package ExcecoesPersonalizadas.VeryBadImplementation.application.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
