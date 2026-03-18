@@ -1,10 +1,9 @@
-package semInterfaces.model.entitites.services;
+package semInterfaces.model.services;
 
 import semInterfaces.model.entitites.CarRental;
 import semInterfaces.model.entitites.Invoice;
 
 import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 
 public class RentalService {
     private double pricePerHour;

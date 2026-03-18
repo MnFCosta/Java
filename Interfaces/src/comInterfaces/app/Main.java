@@ -1,9 +1,9 @@
-package semInterfaces.app;
+package comInterfaces.app;
 
-import semInterfaces.model.entitites.CarRental;
-import semInterfaces.model.entitites.Vehicle;
-import semInterfaces.model.services.BrazilTaxService;
-import semInterfaces.model.services.RentalService;
+import comInterfaces.model.entitites.CarRental;
+import comInterfaces.model.entitites.Vehicle;
+import comInterfaces.model.services.BrazilTaxService;
+import comInterfaces.model.services.RentalService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

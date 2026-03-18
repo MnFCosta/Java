@@ -1,4 +1,4 @@
-package semInterfaces.model.entitites.services;
+package semInterfaces.model.services;
 
 public class BrazilTaxService {
 
