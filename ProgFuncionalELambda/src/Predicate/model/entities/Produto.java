@@ -24,4 +24,20 @@ public class Produto {
     public void setValue(Double value) {
         this.value = value;
     }
+
+    public static boolean staticProductPredicate(Produto p){
+        return p.getValue() >= 100;
+    }
+
+    public  boolean productPredicate(){
+        return this.value >= 100;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }
