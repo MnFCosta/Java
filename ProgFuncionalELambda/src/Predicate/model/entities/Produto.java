@@ -29,15 +29,20 @@ public class Produto {
         return p.getValue() >= 100;
     }
 
-    public  boolean productPredicate(){
+    public boolean productPredicate(){
         return this.value >= 100;
+    }
+
+    public void nonStaticProductConsumer(){
+        this.value = this.value * 1.1;
+    }
+
+    public static void staticProductConsumer(Produto p){
+        p.setValue(p.getValue() * 1.1);
     }
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "name='" + name + '\'' +
-                ", value=" + value +
-                '}';
+        return String.format("Produto: %s, %.2f", this.name, this.value);
     }
 }
