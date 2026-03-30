@@ -41,6 +41,14 @@ public class Produto {
         p.setValue(p.getValue() * 1.1);
     }
 
+    public static String staticUpperCaseName(Produto p){
+        return p.getName().toUpperCase();
+    }
+
+    public String upperCaseName(){
+        return this.name.toUpperCase();
+    }
+
     @Override
     public String toString() {
         return String.format("Produto: %s, %.2f", this.name, this.value);
