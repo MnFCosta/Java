@@ -18,7 +18,5 @@ public class Main {
         ProductService ps = new ProductService();
 
         System.out.printf("%.2f", ps.filteredSum(list, p -> p.getName().charAt(0) == 'M'));
-
-
     }
 }
