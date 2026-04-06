@@ -1,4 +1,4 @@
-package DefaultMethods.app.model.services;
+package DefaultMethods.model.services;
 
 import java.security.InvalidParameterException;
 

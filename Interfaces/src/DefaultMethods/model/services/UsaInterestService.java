@@ -1,6 +1,4 @@
-package DefaultMethods.app.model.services;
-
-import java.security.InvalidParameterException;
+package DefaultMethods.model.services;
 
 public class UsaInterestService implements InterestService {
     private double interestRate;

@@ -1,9 +1,9 @@
 package DefaultMethods.app;
 
 
-import DefaultMethods.app.model.services.BrazilInterestService;
-import DefaultMethods.app.model.services.InterestService;
-import DefaultMethods.app.model.services.UsaInterestService;
+import DefaultMethods.model.services.BrazilInterestService;
+import DefaultMethods.model.services.InterestService;
+import DefaultMethods.model.services.UsaInterestService;
 
 import java.util.Locale;
 import java.util.Scanner;
