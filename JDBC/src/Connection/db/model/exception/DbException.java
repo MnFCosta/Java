@@ -1,4 +1,4 @@
-package db.model.exception;
+package Connection.db.model.exception;
 
 public class DbException extends RuntimeException {
 

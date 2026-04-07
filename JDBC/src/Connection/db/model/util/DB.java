@@ -1,12 +1,13 @@
-package db.model.util;
+package Connection.db.model.util;
 
-import db.model.exception.DbException;
+import Connection.db.model.exception.DbException;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 public class DB {
@@ -32,6 +33,16 @@ public class DB {
             try {
                 conn.close();
             }catch (SQLException e){
+                throw new DbException(e.getMessage());
+            }
+        }
+    }
+
+    public static void closeable(AutoCloseable closeable){
+        if (closeable != null){
+            try {
+                closeable.close();
+            } catch (Exception e) {
                 throw new DbException(e.getMessage());
             }
         }

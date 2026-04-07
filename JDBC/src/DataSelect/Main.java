@@ -1,7 +1,7 @@
-package app;
+package DataSelect;
 
-import db.model.exception.DbException;
-import db.model.util.DB;
+import Connection.db.model.exception.DbException;
+import Connection.db.model.util.DB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

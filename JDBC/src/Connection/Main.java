@@ -1,6 +1,6 @@
-package app;
+package Connection;
 
-import db.model.util.DB;
+import Connection.db.model.util.DB;
 
 import java.sql.Connection;
 
