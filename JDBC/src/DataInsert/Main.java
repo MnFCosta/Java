@@ -17,7 +17,7 @@ public class Main {
                         "INSERT INTO seller"
                                 + "(Name, Email, BirthDate, BaseSalary, DepartmentId)"
                                 + "VALUES "
-                                + "(?, ?, ?, ?, ?)")
+                                + "(?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS)
         ) {
             pst.setString(1, "Manoel Costa");
             pst.setString(2, "manoel@gmail.com");
@@ -26,7 +26,16 @@ public class Main {
             pst.setInt(5, 4);
 
             int rowsAffected = pst.executeUpdate();
-            System.out.printf("Done, Rows Affected: %d", rowsAffected);
+
+            if (rowsAffected > 0) {
+                ResultSet rs = pst.getGeneratedKeys();
+                while (rs.next()){
+                    int id = rs.getInt(1);
+                    System.out.println("Done ID = " + id);
+                }
+            } else {
+                System.out.println("No rows affected!");
+            }
 
         } catch (SQLException | ParseException e) {
             e.printStackTrace();
