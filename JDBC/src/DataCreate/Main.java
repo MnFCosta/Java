@@ -1,6 +1,5 @@
-package DataInsert;
+package DataCreate;
 
-import Connection.db.model.exception.DbException;
 import Connection.db.model.util.DB;
 
 import java.sql.*;
